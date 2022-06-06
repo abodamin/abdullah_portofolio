@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portofolio_website/constaint.dart';
+import 'package:portofolio_website/models/resources.dart';
 import 'package:portofolio_website/screen/main/component/icon_about.dart';
 
 class SocialMedia extends StatelessWidget {
@@ -17,18 +18,17 @@ class SocialMedia extends StatelessWidget {
             children: [
               Spacer(),
               IconAbout(
-                asset: 'assets/icons/linkedin.svg',
-                url:
-                    'https://www.linkedin.com/in/achmad-rizki-nur-fauzie-a2a7021b3/',
+                asset: R.ic_linkedIn,
+                url: 'https://www.linkedin.com/in/abdullah-alamin/',
               ),
               IconAbout(
-                asset: 'assets/icons/github.svg',
-                url: 'https://github.com/achmadrizkin',
+                asset: R.ic_github_grey,
+                url: 'https://github.com/abodamin',
               ),
               IconAbout(
-                asset: 'assets/icons/twitter.svg',
+                asset: R.ic_twitter,
                 url:
-                    'https://twitter.com/arizkinf',
+                    'https://twitter.com/AbdullahDev0',
               ),
               Spacer(),
             ],

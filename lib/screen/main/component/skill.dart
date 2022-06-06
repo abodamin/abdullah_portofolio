@@ -13,14 +13,15 @@ class SkillSet extends StatelessWidget {
       children: [
         Image.asset(
           image,
-          width: 50,
-          height: 50,
+          width: 30,
+          height: 30,
           filterQuality: FilterQuality.medium,
         ),
-        SizedBox(height: defaultPadding / 2),
+        SizedBox(height: defaultPadding),
         Text(
           text,
           style: Theme.of(context).textTheme.subtitle2,
+          maxLines: 3,
         ),
       ],
     );

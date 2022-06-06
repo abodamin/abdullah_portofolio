@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portofolio_website/models/resources.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({Key? key}) : super(key: key);
@@ -14,11 +15,11 @@ class MyInfo extends StatelessWidget {
             Spacer(flex: 2,),
             CircleAvatar(
               radius: 50.0,
-              backgroundImage: AssetImage("assets/images/profile.jpg"),
+              backgroundImage: AssetImage(R.img_profile_wide),
             ),
             Spacer(),
             Text(
-              "Achmad Rizki Nur Fauzie",
+              "Abdullah Alamin",
               style: Theme.of(context).textTheme.subtitle1,
             ),
             Text(

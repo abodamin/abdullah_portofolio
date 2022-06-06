@@ -13,12 +13,10 @@ class MyProject extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding,),
         Text(
-          "My Projects",
+          "Previous Projects",
           style: Theme.of(context).textTheme.headline6,
-        ),
-        Text(
-          "Click Read More if you want see a source code or more details",
         ),
         SizedBox(
           height: defaultPadding,

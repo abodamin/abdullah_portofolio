@@ -16,7 +16,7 @@ class IconAbout extends StatelessWidget {
       onPressed: () {
         launch(url);
       },
-      icon: SvgPicture.asset(asset),
+      icon: Image.asset(asset),
     );
   }
 }

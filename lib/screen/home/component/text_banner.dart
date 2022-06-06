@@ -17,22 +17,24 @@ class TextBanner extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "Discover my Amazing \nProject!",
+            "Abdullah Alamin",
             style: Responsive.isDesktop(context)
-                ? Theme.of(context)
-                    .textTheme
-                    .headline3!
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.white)
-                : Theme.of(context)
-                    .textTheme
-                    .headline5!
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.white),
+                ? Theme.of(context).textTheme.headline3!.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    )
+                : Theme.of(context).textTheme.headline5!.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
           ),
           if (!Responsive.isMobileLarge(context))
             SizedBox(
-              height: defaultPadding /2,
+              height: defaultPadding / 2,
             ),
-          Responsive.isMobile(context) ? Expanded(child: AnimatedText()) : AnimatedText()
+          Responsive.isMobile(context)
+              ? Expanded(child: AnimatedText())
+              : AnimatedText()
         ],
       ),
     );
@@ -47,22 +49,23 @@ class AnimatedText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTextStyle(
-      maxLines: 1,
+      maxLines: 10,
       overflow: TextOverflow.ellipsis,
       style: Theme.of(context).textTheme.subtitle1!,
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("I build "),
+          Text("Mobile developer passionate of programming in general with sence of quality assurance and beautiful designs. .  . \n ", maxLines: 4,),
+          // Text("I build "),
+          SizedBox(height: 30,),
           AnimatedTextKit(
             animatedTexts: [
-              TyperAnimatedText("flutter portofolio website."),
-              TyperAnimatedText("e-commerce with firebase."),
-              TyperAnimatedText("social media integeration."),
-              TyperAnimatedText("covid tracker integeration."),
-              TyperAnimatedText("flutter news app."),
-              TyperAnimatedText("hero quiz app."),
-              TyperAnimatedText("translator apps."),
-              TyperAnimatedText("to-do list apps."),
+              TyperAnimatedText("iOS"),
+              TyperAnimatedText("Android"),
+              TyperAnimatedText("Flutter/Dart"),
+              TyperAnimatedText("Kotlin/Java"),
+              TyperAnimatedText("Custom Applications."),
+              TyperAnimatedText("and more. .  ."),
             ],
           ),
         ],

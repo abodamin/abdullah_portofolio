@@ -15,7 +15,7 @@ class DownloadCV extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              "DOWNLOAD CV",
+              "Contact Me",
               style: Theme.of(context).textTheme.bodyText1!,
             ),
             SizedBox(width: defaultPadding / 2),
