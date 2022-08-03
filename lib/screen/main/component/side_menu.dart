@@ -13,7 +13,7 @@ class SideMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
         child: SingleChildScrollView(
-      padding: EdgeInsets.all(defaultPadding),
+      // padding: EdgeInsets.all(defaultPadding),
       child: Column(
         children: [
           Text(

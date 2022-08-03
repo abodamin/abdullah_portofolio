@@ -26,7 +26,6 @@ class SkillMenu extends StatelessWidget {
           text: 'Git',
         ),
         SizedBox(width: defaultPadding),
-
       ],
     );
   }
