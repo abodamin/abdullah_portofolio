@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/screen/main/component/download_cv.dart';
-import 'package:portofolio_website/screen/main/component/skill_menu.dart';
-import 'package:portofolio_website/screen/main/component/social_media.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/views/main/component/skill_menu.dart';
+import 'package:portofolio_website/views/main/component/social_media.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({

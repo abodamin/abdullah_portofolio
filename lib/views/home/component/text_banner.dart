@@ -1,7 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/responsive.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/views/common/responsive.dart';
 
 class TextBanner extends StatelessWidget {
   const TextBanner({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/models/resources.dart';
-import 'package:portofolio_website/screen/main/component/skill.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/app/resourses.dart';
+import 'package:portofolio_website/views/main/component/skill.dart';
 
 class SkillMenu extends StatelessWidget {
   const SkillMenu({Key? key}) : super(key: key);
@@ -28,14 +28,5 @@ class SkillMenu extends StatelessWidget {
         SizedBox(width: defaultPadding),
       ],
     );
-  }
-}
-
-class _SkillItem extends StatelessWidget {
-  const _SkillItem({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

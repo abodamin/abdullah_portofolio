@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/models/resources.dart';
-import 'package:portofolio_website/responsive.dart';
-import 'package:portofolio_website/screen/home/component/text_banner.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/app/resourses.dart';
+import 'package:portofolio_website/views/common/responsive.dart';
+import 'package:portofolio_website/views/home/component/text_banner.dart';
 
 class HomeBanner extends StatelessWidget {
   const HomeBanner({

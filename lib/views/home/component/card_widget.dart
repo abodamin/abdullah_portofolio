@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/models/project.dart';
-import 'package:portofolio_website/models/resources.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/data/local_models/project.dart';
 
 class CardWidget extends StatelessWidget {
   const CardWidget({

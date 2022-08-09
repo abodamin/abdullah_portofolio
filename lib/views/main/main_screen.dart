@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/responsive.dart';
-import 'package:portofolio_website/screen/main/component/drawerWeb.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/views/common/responsive.dart';
+import 'package:portofolio_website/views/main/component/drawerWeb.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key, required this.children}) : super(key: key);
@@ -22,7 +22,8 @@ class MainScreen extends StatelessWidget {
                     Scaffold.of(context).openDrawer();
                   },
                 ),
-              )),
+              ),
+            ),
       drawer: DrawerWeb(),
       body: Center(
         child: Container(
@@ -30,18 +31,16 @@ class MainScreen extends StatelessWidget {
           child: Row(
             children: [
               if (Responsive.isDesktop(context))
-                Expanded(
+                Flexible(
                   flex: 2,
                   // get widget from widget -> drawerWeb.dart
                   child: DrawerWeb(),
                 ),
               SizedBox(width: defaultPadding),
-              Expanded(
-                flex: 7,
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: children,
-                  ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                child: Column(
+                  children: children,
                 ),
               ),
               SizedBox(width: defaultPadding),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/models/resources.dart';
+import 'package:portofolio_website/app/resourses.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({Key? key}) : super(key: key);

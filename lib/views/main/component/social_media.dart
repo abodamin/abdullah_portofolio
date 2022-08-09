@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/models/resources.dart';
-import 'package:portofolio_website/screen/main/component/icon_about.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/app/resourses.dart';
+import 'package:portofolio_website/views/main/component/icon_about.dart';
 
 class SocialMedia extends StatelessWidget {
   const SocialMedia({

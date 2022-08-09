@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
+import 'package:portofolio_website/app/colors.dart';
 
 class AnimatedCounter extends StatelessWidget {
   const AnimatedCounter({

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
+import 'package:portofolio_website/app/colors.dart';
 
 class SkillSet extends StatelessWidget {
   const SkillSet({Key? key, required this.image, required this.text})

@@ -1,10 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:portofolio_website/constaint.dart';
-import 'package:portofolio_website/models/project.dart';
-import 'package:portofolio_website/responsive.dart';
-import 'package:portofolio_website/screen/home/component/card_widget.dart';
-import 'package:portofolio_website/screen/main/component/social_media.dart';
+import 'package:portofolio_website/app/colors.dart';
+import 'package:portofolio_website/data/local_models/project.dart';
+import 'package:portofolio_website/views/common/responsive.dart';
+import 'package:portofolio_website/views/home/component/card_widget.dart';
 
 class ProjectGridView extends StatelessWidget {
   const ProjectGridView({
@@ -16,12 +15,11 @@ class ProjectGridView extends StatelessWidget {
   final int crossAxisCount;
   final double childAspectRatio;
 
-
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: false,
-      physics: NeverScrollableScrollPhysics(),
+      // physics: NeverScrollableScrollPhysics(),
       itemCount: projects.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: !Responsive.isMobile(context) ? crossAxisCount : 1,

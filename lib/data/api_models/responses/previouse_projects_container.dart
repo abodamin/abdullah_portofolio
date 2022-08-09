@@ -2,7 +2,6 @@
 //
 //     final previouseProjectContainer = previouseProjectContainerFromJson(jsonString);
 
-import 'package:meta/meta.dart';
 import 'dart:convert';
 
 class PreviouseProjectContainer {
